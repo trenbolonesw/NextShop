@@ -1,0 +1,16 @@
+.imageinput{
+    display: none;
+    }
+
+    .imagebutton{
+    text-align: start;
+     background-color: rgb(164, 180, 216);
+}
+
+
+.blogimage{
+
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+}
