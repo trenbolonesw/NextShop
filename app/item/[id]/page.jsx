@@ -26,6 +26,8 @@ const IdUrl = process.env.GET_REQ_URL
   if (!data.success) {
     return <div>Not found</div>;
   }
+
+  console.log("IMAGE URL:", data.data.image)
     return(
         <>
         <h2>item</h2>
