@@ -17,7 +17,7 @@ export default async function SingleItem({params}){
 const IdUrl = process.env.GET_REQ_URL
 
 //use absolute urls inside server components
-   const res = await fetch(`${IdUrl}/${id}`,{
+   const res = await fetch(`https://next-shop-rouge-alpha.vercel.app/api/item/${id}`,{
     cache:'no-store'
    })
     
