@@ -32,7 +32,7 @@ const IdUrl = process.env.GET_REQ_URL
         <>
         <h2>item</h2>
         {data.data.name}
-        {<Image src={data.data.image} height={100} width={100} alt="cool image"/> && <p> image not avaiable</p>}
+        {data.data.image ? <Image src={data.data.image} height={100} width={100} alt="cool image"/> : <p> image not avaiable</p>}
         </>
     )
 }
