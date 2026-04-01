@@ -2,11 +2,11 @@
 
 import { useRouter } from "next/navigation"
 import { useState,useEffect } from "react"
-import { useHttpClient } from "../hooks/http-hook"
-import { useForm } from "../hooks/form-hook"
+import { useHttpClient } from "../hooks/http-hook.js"
+import { useForm } from "../hooks/form-hook.js"
 
-import { VALIDATOR_REQUIRE } from "../util/validators"
-import { VALIDATOR_MINLENGTH } from "../util/validators"
+import { VALIDATOR_REQUIRE } from "../util/validators.js"
+import { VALIDATOR_MINLENGTH } from "../util/validators.js"
 
 import ImagePicker from "../ui/shared/Image-Handlers/image-picker"
 import Input from "../ui/shared/Form-Elements/input"
