@@ -1,81 +1,36 @@
 'use client'
 
-import { useState } from "react"
-import { useRouter } from "next/navigation"
-import ImagePicker from "../shared/Image-Handlers/image-picker"
-
-
+import styles from './landing.module.css'
+import hero from '../../public/gaming-pc.png'
+import Image from 'next/image'
+import arrow from '../../public/rightarrow.svg'
+import Deals from './Deals'
+import Link from 'next/link'
 export default function LandingPage(){
 
- const {push} = useRouter()
-  
-const[image,setImage] = useState(null)
- const [prev,setPrev] = useState(null)
- const [name,setName] = useState('')
-  const [description,setDescription] = useState('')
- const [err,setErr] = useState(false)
- const [errMessage,seterrMessage] = useState('')
+ 
  
 
- const formData = new FormData()
-
- formData.append('name',name)
- formData.append('description',description)
  
- if(image){
-    formData.append('image',image)
- }
- 
- const HandleSubmit = async (e) => {
-     e.preventDefault()
-
-     try{
-         
-       const req = await fetch('/api/item',{
-            method:'POST',
-            body:formData
-        },
-    );
-      
-      
-      if(!req.ok){
-         setErr(true) 
-      } else{
-       push('/Shop')
-      }
-       
-        
-     }catch(err){
-      console.log(err)
-      setErr(true)
-      seterrMessage(err.message)
-     }
- }
 
 
     return(
         <>
-        <h1>items</h1>
-        <form onSubmit={HandleSubmit}>
-          <input
-          placeholder="name"
-          onChange={(e) => setName(e.target.value)}
-          />
-          <input
-          onChange={(e) => setDescription(e.target.value)}
-          placeholder="description"
-          />
-          <ImagePicker 
-          image={image}
-          setImage={setImage}
-          prev={prev}
-          setPrev={setPrev}
-          />
-          {err?<p>failed</p> :<button type="submit">add item</button>}
-          <p>{errMessage}</p>
-          
-        
-        </form>
+       <div className={styles.landing}>
+       <div className={styles.hero}>
+        <div className={styles.right}>
+            <h3 className={styles.heroTitle}>Your number One shopping website</h3>
+        </div>
+          <div className={styles.left}>
+            <Image loading='eager' alt='cool hero image' src={hero} className={styles.heroImage}/>
+           
+            <Link href="#Deals" className={styles.Link}>See Deals</Link>
+            <Image className={styles.Arrow} loading='eager' alt='arrow' src={arrow} width={30}/>
+            
+          </div>
+       </div>
+       <Deals/>
+       </div>
         </>
     )
 }

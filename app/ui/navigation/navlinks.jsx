@@ -1,9 +1,14 @@
 import Link from "next/link";
-
+import styles from './Navigation.module.css'
+import NavLink from "./NavLink";
 export default function NavLinks(){
     return(
         <>
-        <Link href="/Shop">Sales</Link>
+        <div className={styles.menu}>
+            <NavLink href={'/Shop'} name="Sales" style={styles.Links}/>
+            <NavLink href={'/adminCruds'} name="Create" style={styles.Links}/>
+            <NavLink href="/Deals" name="Deals" style={styles.Links}/>
+        </div>
         </>
     )
 }

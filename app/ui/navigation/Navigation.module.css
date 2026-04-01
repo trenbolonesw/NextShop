@@ -1,0 +1,27 @@
+.Nav{
+    background-color: gray;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 80%;
+}
+
+.menu{
+  display: flex;
+ margin-top: 2rem;
+ gap: 1rem;
+}
+.Links{
+    color: white;
+    text-decoration: none;
+}
+
+.icon{
+    color: rgb(255, 117, 117);
+    text-decoration: none;
+}
+.Links,
+.icon,
+.fonts{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

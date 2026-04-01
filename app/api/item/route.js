@@ -28,6 +28,7 @@ export async function POST(req){
          const name = formData.get('name');
     const description = formData.get('description');
     const image = formData.get('image')
+    const quantity = formData.get('quantity')
   if (!image || image.size === 0) {
       return Response.json({ success: false, message: "No image" }, { status: 400 });
     }
@@ -50,7 +51,8 @@ export async function POST(req){
         const newItem = await item.create({
           name,
           description,
-          image:uploadResult.secure_url
+          image:uploadResult.secure_url,
+          quantity
         })
         return Response.json({ success: true, data: newItem }, { status: 201 });
       } catch (error) {

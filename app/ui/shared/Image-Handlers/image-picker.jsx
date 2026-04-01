@@ -1,7 +1,12 @@
 import Class from './image-picker.module.css'
-import { useEffect,useRef } from 'react';
-export default function ImagePicker({prev,setPrev,image,setImage}){
+import { useEffect,useRef,useState } from 'react';
+export default function ImagePicker(props){
     
+ const [image, setImage] = useState();
+  const [prev, setPrev] = useState();
+
+
+
      useEffect(() => {
   if(!image){
     return;
@@ -20,14 +25,18 @@ export default function ImagePicker({prev,setPrev,image,setImage}){
  }
 
  function SelectedHandler(event){
-        let pickedImage;
-
-        if(event.target.files && event.target.files.length === 1){
-
-            pickedImage = event.target.files[0]
-
-            setImage(pickedImage)
-        }
+       let pickedFile;
+   
+    if (event.target.files && event.target.files.length === 1) {
+      pickedFile = event.target.files[0];
+      setImage(pickedFile);
+    
+     
+    } else {
+      
+      fileIsValid = false;
+    }
+    props.onInput(props.id, pickedFile);
         
  }
  const imageRef = useRef()
@@ -36,6 +45,7 @@ export default function ImagePicker({prev,setPrev,image,setImage}){
  return(
     <>
     <input
+         id={props.id}
          className={Class.imageinput} 
          type="file"
          ref={imageRef}

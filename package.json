@@ -1,7 +1,7 @@
 {
     "scripts": {
-        "dev": "next dev",
-        "build":"next build"
+        "dev": "next dev --webpack",
+        "build": "next build"
     },
     "dependencies": {
         "cloudinary": "^2.9.0",

@@ -1,0 +1,21 @@
+.itemCard{
+    position: relative;
+    color: aliceblue;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    height: 21rem;
+   
+}
+
+.Image{
+    width: 15rem;
+    height: auto;
+   object-fit:fit;
+}
+.ImageWrapper{
+ height: 15rem;
+}

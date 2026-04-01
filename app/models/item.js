@@ -7,6 +7,7 @@ const ItemSchema = new mongoose.Schema({
   },
   description: String,
     image:{type:String,required:true},
+    quantity:{type:Number,required:true}
 });
 
 export default mongoose.models.Item || mongoose.model('Item', ItemSchema);
