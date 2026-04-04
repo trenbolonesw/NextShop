@@ -7,7 +7,7 @@ export const metadata = {
   description:'Your new favorite online ecommerce site',
  images:[
   {
-    url:'/opengraph-image.png',
+    url:'https://next-shop-rouge-alpha.vercel.app/opengraph-image.png',
      width: 1200,
         height: 630,
         alt: 'NextShop preview image',
