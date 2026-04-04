@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import styles from './Item.module.css'
 import Link from 'next/link'
-import image from '../../public/na.png'
 export default function ItemCard(props){
 
 
@@ -12,7 +11,7 @@ export default function ItemCard(props){
         <div className={styles.itemCard} key={props.Key}>
             <Link href={props.Id}>
             <div className={styles.ImageWrapper}>
-           <Image className={styles.Image} src={!props.Src ? image:props.src} alt='dynamic images' width={200} height={200}/> 
+           <Image className={styles.Image} src={props.src} alt='dynamic images' width={200} height={200}/> 
            </div>
             <h4>{props.Title}</h4>
             <h3>price</h3>

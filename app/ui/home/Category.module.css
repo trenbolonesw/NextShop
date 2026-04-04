@@ -1,0 +1,38 @@
+.categoryicons{
+    width: 100px;
+    height: 100px;
+}
+
+.page{
+    margin-top: 5%;
+ width: 100%;
+ background-color: rgb(255, 255, 255);
+ padding: 1rem;
+}
+.categorysection{
+    display: flex;
+    gap: 2%;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.category{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding: 1rem;
+    border-style: solid;
+    border-color: rgba(31, 29, 29,0.2);
+    border-width: 2px;
+    width: 20%;
+    border-radius: 10px;
+}
+
+.header{
+ font-weight: 500;
+}
+
+.header,
+.fonts{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

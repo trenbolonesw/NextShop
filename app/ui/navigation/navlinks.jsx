@@ -8,6 +8,7 @@ export default function NavLinks(){
             <NavLink href={'/Shop'} name="Sales" style={styles.Links}/>
             <NavLink href={'/adminCruds'} name="Create" style={styles.Links}/>
             <NavLink href="/Deals" name="Deals" style={styles.Links}/>
+            <NavLink href='/Cart' name="icon" style={styles.Links}/>
         </div>
         </>
     )

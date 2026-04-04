@@ -1,10 +1,11 @@
 
 
-
 import Image from "next/image";
+import AddToCart from "@/app/ui/Store/AddtoCart";
 
 
 export default async function SingleItem({params}){
+
 
 
  const {id} =  await params
@@ -37,6 +38,7 @@ const IdUrl = 'https://next-shop-rouge-alpha.vercel.app'
         {data.data.name}
         {data.data.image ? <Image src={data.data.image} height={100} width={100} alt="cool image"/> : <p> image not avaiable</p>}
         <h3>Item Amount:{data.data.quantity}</h3>
+         <AddToCart item={data}/>
         </>
     )
 }

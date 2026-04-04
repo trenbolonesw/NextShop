@@ -3,9 +3,11 @@ import { useState,useEffect } from "react"
 import ItemCard from "./Item"
 import { useHttpClient } from "../../hooks/http-hook"
 import styles from './Store.module.css'
+import AddToCart from "@/app/ui/Store/AddtoCart"
 export default function Store(){
 
  const [item,setItems] = useState([])
+
 
  const {sendRequest} = useHttpClient()
 
@@ -24,11 +26,17 @@ const fetchItems = async () => {
    
  }
 
+
     return(
         <>
         <div className={styles.StoreItems}>
         {item.map((item) => (
+            
+            <div key={item._id}>
              <ItemCard src={item.image} Id={`/item/${item._id}`} key={item._id} Src={item.image} Title={item.name}/>
+            
+             </div>
+             
         ))}
            </div>
         </>

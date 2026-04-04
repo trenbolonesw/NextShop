@@ -1,11 +1,12 @@
 'use client'
 
 import styles from './landing.module.css'
-import hero from '../../public/gaming-pc.png'
+import hero from '../../public/heroimg.png'
 import Image from 'next/image'
 import arrow from '../../public/rightarrow.svg'
-import Deals from './Deals'
+import Deals from './Categories'
 import Link from 'next/link'
+import Categories from './Categories'
 export default function LandingPage(){
 
  
@@ -29,7 +30,7 @@ export default function LandingPage(){
             
           </div>
        </div>
-       <Deals/>
+       <Categories/>
        </div>
         </>
     )

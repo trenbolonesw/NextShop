@@ -1,5 +1,5 @@
 .landing{
-    background-color: rgb(226, 230, 235);
+    background: linear-gradient(rgb(20, 44, 71),rgb(71, 138, 214));
     padding: 60px;
 }
 .hero{
@@ -15,23 +15,28 @@
  margin-right: auto;
 }
 
+
+
 .heroImage{
-width: 600px;
+width: 700px;
 height: 500px;
+
 }
 .heroTitle{
     font-size: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
+    font-weight: 300;
+    color: white;
 }
 .Arrow{
     margin-bottom: -7px;
     margin-left: 3px;
+   
 }
 .Link{
     text-decoration: none;
     margin-bottom: 1rem;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 600;
 }
 
