@@ -24,7 +24,14 @@ export default function Image() {
           fontWeight: "bold",
         }}
       >
-        NextShop 🛍️
+          <img
+          src="https://res.cloudinary.com/dciywsh4y/image/upload/v1775353408/Group_3_2_z2picd.png"
+          style={{
+            width: 200,
+            height: 200,
+            objectFit: "contain",
+          }}
+        />
       </div>
     ),
     size
