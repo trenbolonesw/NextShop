@@ -8,13 +8,10 @@ export const metadata = {
   openGraph:{
  title:'NextShop',
   description:'Your new favorite online ecommerce site',
-  url:"https://next-shop-rouge-alpha.vercel.app",
+ 
  images:[
   {
-    url:'https://res.cloudinary.com/dciywsh4y/image/upload/v1775353408/Group_3_2_z2picd.png',
-     width: 1200,
-        height: 630,
-        alt: 'NextShop preview image',
+   url: "/opengraph-image",
   }
  ],
  type:'website'
