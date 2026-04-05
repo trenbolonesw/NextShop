@@ -4,3 +4,10 @@ module.exports = {
     ],
   },
 };
+
+
+module.exports = {
+  images: {
+    unoptimized: true,
+  },
+};
