@@ -5,6 +5,8 @@ import {home} from './page.module.css'
 export const metadata = {
   title:'NextShop',
   description:'Your new favorite online ecommerce site',
+  openGraph:{
+
  images:[
   {
     url:'https://next-shop-rouge-alpha.vercel.app/opengraph-image.png',
@@ -13,6 +15,7 @@ export const metadata = {
         alt: 'NextShop preview image',
   }
  ]
+}
 }
 
 
