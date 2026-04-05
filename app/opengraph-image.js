@@ -25,7 +25,7 @@ export default function Image() {
         }}
       >
           <img
-          src="https://res.cloudinary.com/dciywsh4y/image/upload/v1775353408/Group_3_2_z2picd.png"
+          src="https://res.cloudinary.com/dciywsh4y/image/upload/v1775355582/Group_3_6_m4xnlo.png"
           style={{
             
             objectFit: "contain",
