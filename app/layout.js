@@ -11,7 +11,7 @@ export const metadata = {
   url:"https://next-shop-rouge-alpha.vercel.app",
  images:[
   {
-    url:'https://res.cloudinary.com/dciywsh4y/image/upload/v1775353408/Group_3_2_z2picd.png',
+    url:'https://res.cloudinary.com/dciywsh4y/image/upload/v1775326741/shop-items/bpnjmhk0nndhphpufvnk.webp',
      width: 1200,
         height: 630,
         alt: 'NextShop preview image',
