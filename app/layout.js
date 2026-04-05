@@ -11,7 +11,7 @@ export const metadata = {
   url:"https://next-shop-rouge-alpha.vercel.app",
  images:[
   {
-    url:'https://next-shop-rouge-alpha.vercel.app/opengraph-image.png',
+    url:'https://res.cloudinary.com/dciywsh4y/image/upload/v1775352831/opengraph-image.png_gcyig3.png',
      width: 1200,
         height: 630,
         alt: 'NextShop preview image',
