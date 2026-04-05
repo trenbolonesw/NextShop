@@ -11,27 +11,11 @@ export const size = {
 export default function Image() {
   return new ImageResponse(
     (
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          background: "#0a0a0a",
-          color: "white",
-          fontSize: 64,
-          fontWeight: "bold",
-        }}
-      >
+      
           <img
           src="https://res.cloudinary.com/dciywsh4y/image/upload/v1775355582/Group_3_6_m4xnlo.png"
-          style={{
-            
-            objectFit: "contain",
-          }}
         />
-      </div>
+      
     ),
     size
   );
