@@ -13,7 +13,7 @@ export default function Image() {
     (
       
           <img
-          src="https://res.cloudinary.com/dciywsh4y/image/upload/v1775356906/Group_2_1_nciztn.png"
+          src="https://res.cloudinary.com/dciywsh4y/image/upload/v1775357137/Group_2_2_uaznmy.png"
         />
       
     ),
