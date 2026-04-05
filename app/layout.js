@@ -6,7 +6,9 @@ export const metadata = {
   title:'NextShop',
   description:'Your new favorite online ecommerce site',
   openGraph:{
-
+ title:'NextShop',
+  description:'Your new favorite online ecommerce site',
+  url:"https://next-shop-rouge-alpha.vercel.app",
  images:[
   {
     url:'https://next-shop-rouge-alpha.vercel.app/opengraph-image.png',
@@ -14,7 +16,8 @@ export const metadata = {
         height: 630,
         alt: 'NextShop preview image',
   }
- ]
+ ],
+ type:'website'
 }
 }
 
