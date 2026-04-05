@@ -12,8 +12,8 @@ export default function Image() {
   return new ImageResponse(
     (
       
-          <img
-          src="https://res.cloudinary.com/dciywsh4y/image/upload/v1775356122/Group_3_7_h9dbj5.png"
+          <imgg
+          src="https://res.cloudinary.com/dciywsh4y/image/upload/v1775356683/heroimg_ulq3ih.png"
         />
       
     ),
